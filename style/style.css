@@ -10,3 +10,17 @@
 .btn-bg-color{
     background-color: #7AA93C !important;
 }
+
+.carousel-item img {
+  height: 70vh; 
+}
+
+.hero-heading{
+font-size: 54px !important;
+}
+
+@media (min-width: 390px) and (max-width: 480px) {
+  .hero-section-h1{
+    font-size: 35px !important; 
+  }
+}
