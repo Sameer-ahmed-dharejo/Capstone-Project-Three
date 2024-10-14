@@ -25,3 +25,8 @@
     font-size: 35px !important;
   }
 }
+
+.bg-img{
+  background-image: url(../images/produce.jpg);
+  background-size: cover;
+}
