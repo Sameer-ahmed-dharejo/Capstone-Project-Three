@@ -51,3 +51,9 @@
   position: relative;
   z-index: 2;
 }
+
+.offers-img{
+  background-image: url(../images/offers.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+}
