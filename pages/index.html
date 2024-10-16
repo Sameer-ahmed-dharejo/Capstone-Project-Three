@@ -18,7 +18,7 @@
   <!-- strat-header -->
   <header>
     <!-- first header -->
-    <div class="d-none d-lg-block d-md-none my-3">
+    <div id="#arrow" class="d-none d-lg-block d-md-none my-3">
       <div class="d-flex justify-content-between container mb-2">
         <div class="">
           <a href="" class="text-black text-decoration-none me-lg-4 mx-md-4 mx-3 fw-semibold"><iconify-icon
@@ -77,8 +77,8 @@
                 Account
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="./login.html">Login</a></li>
-                <li><a class="dropdown-item" href="../pages/login.html">Register</a></li>
+                <li><a class="dropdown-item" href="../pages/login.html">Login</a></li>
+                <li><a class="dropdown-item" href="../pages/register.html">Register</a></li>
               </ul>
             </li>
           </ul>
@@ -90,8 +90,6 @@
         </div>
       </div>
     </nav>
-
-    <script src="../js/script.js"></script>
   </header>
   <!-- hero-section -->
   <div id="carouselExampleIndicators" class="carousel slide">
@@ -183,7 +181,7 @@
     </div>
   </div>
   <!-- produce-products -->
-  <div class="bg-img py-5 my-5">
+  <div class="bg-img object-fit-cover py-5 my-5">
     <div class="container">
       <div class="row justify-content-evenly align-items-center px-5 flex-wrap">
         <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-center">
@@ -270,7 +268,7 @@
             </div>
             <h5 class="card-title fw-bold">Kiwi Juice</h5>
             <p class="card-text text-muted">$3.50</p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -287,7 +285,7 @@
             </div>
             <h5 class="card-title fw-bold">Pomegranate</h5>
             <p class="card-text text-muted">$10.00</p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -304,7 +302,7 @@
             </div>
             <h5 class="card-title fw-bold">Mixed Dry Fruits</h5>
             <p class="card-text text-muted">$5.00 <s>$10.00</s> </p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -321,7 +319,7 @@
             </div>
             <h5 class="card-title fw-bold">Fresh Beet Juice</h5>
             <p class="card-text text-muted">$6.00 <s>$12.00</s></p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -340,7 +338,7 @@
             </div>
             <h5 class="card-title fw-bold">Wheat Bread</h5>
             <p class="card-text text-muted">$5.75</p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -357,7 +355,7 @@
             </div>
             <h5 class="card-title fw-bold">Peach Fruit</h5>
             <p class="card-text text-muted">$222.00</p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -374,7 +372,7 @@
             </div>
             <h5 class="card-title fw-bold">Carrot Juice</h5>
             <p class="card-text text-muted">$7.00 </p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -391,16 +389,16 @@
             </div>
             <h5 class="card-title fw-bold">Strawberry</h5>
             <p class="card-text text-muted">$14.00</s></p>
-            <button type="button" class="btn btn-success">Add To Card</button>
+            <button type="button" class="btn btn-success">Add To Cart</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- food-presents-section -->
-  <div class="leganic-section bg-dark text-white py-5">
-    <div class="overlay"></div>
-    <div class="container leganic-color py-5 position-relative">
+  <div class="leganic-section position-relative overflow-hidden object-fit-cover bg-dark text-white py-5">
+    <div class="overlay z-2 position-absolute top-0 start-0 end-0 bottom-0"></div>
+    <div class="container leganic-color z-2 py-5 position-relative">
       <div class="row align-items-center justify-content-between">
         <div class="col-md-7">
           <h4 class="text-success leganic fw-normal">Leganic Food Presents...</h4>
@@ -533,6 +531,44 @@
     </div>
   </div>
   <!-- fresh-fruits-&-vegetables -->
+  <div style="background-image: url(../images/fresh-vegetable.jpg); background-size: cover;">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6"> </div>
+            <div class="col-md-6 mt-5">
+                <div class=" p-4">
+                    <h2 class="fw-normal mb-3">Deal Of The Week</h2>
+                    <h1 class=" mb-3">Fresh Fruits &amp; Vegetables</h1>
+                    <h5 class="fw-bold text-success mb-4">Offer 2Kg pack from our organic store</h5>
+                    <p class="text-muted mb-4">Incididunt ut labore et dolore magna aliqua. Ut enim min veniam quis
+                        trud exercitation ullamco laboris aliquip exea.</p>
+                    <div class="row mb-4">
+                        <div class="col-md-3 col-sm-6 col-6 text-center py-3 bg-white rounded shadow">
+                            <span class="d-block fs-2 fw-bold">00</span>
+                            <small class="text-muted">Days</small>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 text-center py-3 bg-white rounded shadow">
+                            <span class="d-block fs-2 fw-bold">00</span>
+                            <small class="text-muted">Hours</small>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 text-center py-3 bg-white rounded shadow">
+                            <span class="d-block fs-2 fw-bold">00</span>
+                            <small class="text-muted">Mins</small>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 text-center py-3 bg-white rounded shadow">
+                            <span class="d-block fs-2 fw-bold">00</span>
+                            <small class="text-muted">Secs</small>
+                        </div>
+                    </div>
+                    <div class="text-md-center">
+                        <button class=" ms-lg-5 border-0 bg-warning p-3 fw-bold text-white text-uppercase">Get The Deal</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+  </div>
+  <!-- latest-news -->
   <div class="container my-5">
     <div class="text-center">
       <img src="../images/icon-1.png" alt="">
@@ -544,8 +580,8 @@
           <img src="../images/news-1-370x308.jpg" class="card-img-top img-fluid" alt="">
           <div class="card-body">
             <div class="d-flex align-items-center mb-3">
-              <div class="bg-success text-white text-center rounded-lg px-2 py-1">
-                <p class="mb-0 font-weight-bold">07</p>
+              <div class="bg-success text-white text-center rounded-2 px-4 py-2">
+                <p class="mb-0 fw-bold">07</p>
                 <p class="mb-0">Jun</p>
               </div>
             </div>
@@ -561,8 +597,8 @@
           <img src="../images/news-4-370x308.jpg" class="card-img-top img-fluid" alt="">
           <div class="card-body">
             <div class="d-flex align-items-center mb-3">
-              <div class="bg-success text-white text-center rounded-lg px-2 py-1">
-                <p class="mb-0 font-weight-bold">07</p>
+              <div class="bg-success text-white text-center rounded-2 px-4 py-2">
+                <p class="mb-0 fw-bold">07</p>
                 <p class="mb-0">Jun</p>
               </div>
             </div>
@@ -578,8 +614,8 @@
           <img src="../images/news-8-370x308.jpg" class="card-img-top" alt="">
           <div class="card-body">
             <div class="d-flex align-items-center mb-3">
-              <div class="bg-success text-white text-center rounded-lg px-2 py-1">
-                <p class="mb-0 font-weight-bold">07</p>
+              <div class="bg-success text-white text-center rounded-2 px-4 py-2">
+                <p class="mb-0 fw-bold">07</p>
                 <p class="mb-0">Jun</p>
               </div>
             </div>
@@ -594,7 +630,7 @@
   </div>
   <!-- client-images-section -->
   <div class="container my-5">
-    <div class="row justify-content-evenly align-items-center" >
+    <div class="row justify-content-evenly align-items-center">
       <div class="col-lg-2 col-md-3 col-sm-6 col-6">
         <img class="img-fluid" src="../images/client-logo-1.jpg" alt="" />
       </div>
@@ -613,104 +649,110 @@
     </div>
   </div>
   <!-- special-offers -->
-  <div class="position-relative offers-img" >
+  <div class="position-relative offers-img">
     <img class="position-absolute top-0 start-50 translate-middle img-fluid" src="./images/shape-2.png" alt="">
     <div class="container">
-        <div class="row text-white pt-lg-5 h-100">
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <h1 class="fw-bold">Subscribe To Our Special Offers</h1>
-                <p class="lead">Today sign up for our newsletter and receive 15% OFF on your purchase</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
-                <div class="d-flex justify-content-center align-items-center w-100">
-                    <input type="email" class="form-control p-4" placeholder="Type Your Email" aria-label="Email">
-                    <button type="submit" class="btn btn-success p-3">Subscribe</button>
-                </div>
-            </div>
+      <div class="row text-white pt-lg-5 h-100">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h1 class="fw-bold">Subscribe To Our Special Offers</h1>
+          <p class="lead">Today sign up for our newsletter and receive 15% OFF on your purchase</p>
         </div>
-    </div>
-</div>
-<!-- footer -->
-<footer class="bg-black">
-  <div class="container py-5">
-      <div class="row">
-          <div class="col-md-5 mb-5">
-              <div class="pb-lg-4">
-                  <img src="../images/logo-w.svg" alt="Logo" class="me-2 " style="vertical-align: middle;"/>
-              </div>
-              <p class="text-white">Integer lobortis sem consequat imperdiet sed In nulla <br> viverra ut lorem ipsumut, dapibus conse etur diam nuq <br> bibendum diet.</p>
-              <div class="text-white">
-                  <p><i class="fas fa-map-marker-alt me-2"></i>102 Taily End Road, NewYork - USA</p>
-                  <p><i class="fas fa-phone-alt me-2"></i>+1(222)30345004600</p>
-                  <p><i class="fas fa-envelope me-2"></i>info@organicdomain.com</p>
-              </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+          <div class="d-flex justify-content-center align-items-center w-100">
+            <input type="email" class="form-control p-lg-4 p-sm-2" placeholder="Type Your Email" aria-label="Email">
+            <button type="submit" class="btn btn-success p-lg-3 p-sm-2">Subscribe</button>
           </div>
-          <div class="col-md-2 mb-4">
-              <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
-              <ul class="list-unstyled">
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none">About Us</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none">New Products</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none">Top Seller</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
-              </ul>
-          </div>
-          <div class="col-md-2 mb-4">
-              <h5 class="fw-bold mb-4 text-white">Our Services</h5>
-              <ul class="list-unstyled">
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Organic Food</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Fresh Juices</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Raw Food</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Bread Food</a></li>
-                  <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Dry Food</a></li>
-              </ul>
-          </div>
-          <div class="col-md-3">
-              <h5 class="fw-bold mb-4 text-white">Instagram Feed</h5>
-              <div class="row">
-                  <div class="col-lg-4 col-4">
-                      <img class="img-fluid" src="../images/footer-img-1.jpg" alt="">
-                  </div>
-                  <div class="col-lg-4 col-4">
-                      <img class="img-fluid" src="../images/footer-img-2.jpg" alt="">
-                  </div>
-                  <div class="col-lg-4 col-4">
-                      <img class="img-fluid" src="../images/footer-img-3.jpg" alt="">
-                  </div>
-              </div>
-              <div class="row mt-2">
-                <div class="col-lg-4 col-4">
-                    <img class="img-fluid" src="../images/footer-img-4.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-4">
-                    <img class="img-fluid" src="../images/footer-img-5.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-4">
-                    <img class="img-fluid" src="../images/footer-img-6.jpg" alt="">
-                </div>
-            </div>
-          </div>
+        </div>
       </div>
-  </div>
-  <div class="border-top border-1 border-dark py-3">
-    <div class="container py-3">
-        <div class="text-white">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
-                    &copy; 2020 LEGANIC - All rights reserved
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-end">                   
-                    <iconify-icon icon="ri:facebook-fill"></iconify-icon>
-                    <iconify-icon class="mx-3" icon="mdi:twitter"></iconify-icon>
-                    <iconify-icon icon="entypo-social:google"></iconify-icon>
-                    <iconify-icon class="mx-3" icon="fa:linkedin"></iconify-icon>
-                    <iconify-icon icon="fa:skype"></iconify-icon>                   
-                </div>
-            </div>
-        </div>
     </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-black">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-5 mb-5">
+          <div class="pb-lg-4">
+            <img src="../images/logo-w.svg" alt="Logo" class="me-2 " style="vertical-align: middle;" />
+          </div>
+          <p class="text-white">Integer lobortis sem consequat imperdiet sed In nulla <br> viverra ut lorem ipsumut,
+            dapibus conse etur diam nuq <br> bibendum diet.</p>
+          <div class="text-white">
+            <p><i class="fas fa-map-marker-alt me-2"></i>102 Taily End Road, NewYork - USA</p>
+            <p><i class="fas fa-phone-alt me-2"></i>+1(222)30345004600</p>
+            <p><i class="fas fa-envelope me-2"></i>info@organicdomain.com</p>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-4 text-white">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none">About Us</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none">New Products</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none">Top Seller</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-4 text-white">Our Services</h5>
+          <ul class="list-unstyled">
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Organic Food</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Fresh Juices</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Raw Food</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Bread Food</a></li>
+            <li class="pt-3"><a href="#" class="text-white text-decoration-none ">Dry Food</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-4 text-white">Instagram Feed</h5>
+          <div class="row">
+            <div class="col-lg-4 col-4">
+              <img class="img-fluid" src="../images/footer-img-1.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-4">
+              <img class="img-fluid" src="../images/footer-img-2.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-4">
+              <img class="img-fluid" src="../images/footer-img-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-lg-4 col-4">
+              <img class="img-fluid" src="../images/footer-img-4.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-4">
+              <img class="img-fluid" src="../images/footer-img-5.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-4">
+              <img class="img-fluid" src="../images/footer-img-6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top border-1 border-dark py-3">
+      <div class="container py-3">
+        <div class="text-white">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+              &copy; 2020 LEGANIC - All rights reserved
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+              <iconify-icon icon="ri:facebook-fill"></iconify-icon>
+              <iconify-icon class="mx-3" icon="mdi:twitter"></iconify-icon>
+              <iconify-icon icon="entypo-social:google"></iconify-icon>
+              <iconify-icon class="mx-3" icon="fa:linkedin"></iconify-icon>
+              <iconify-icon icon="fa:skype"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="arrow" class="fixed-bottom mb-4 mr-4 text-end">
+    <a id="scrollToTop" class="btn btn-warning rounded-circle text-white" href="#">
+      <iconify-icon class="fs-3" icon="mdi:arrow-up-bold"></iconify-icon>
+    </a>
 </div>
-</footer>
 </body>
 
 </html>

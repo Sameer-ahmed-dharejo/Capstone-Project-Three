@@ -5,10 +5,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.first-logo {
-  width: 20px;
-}
-
 .btn-bg-color {
   background-color: #7AA93C !important;
 }
@@ -23,33 +19,18 @@
 
 .bg-img {
   background-image: url(../images/produce.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .leganic-section {
   background-image: url('../images/healthy\ organic\ food.jpg');
   background-attachment: fixed;
-  background-size: cover;
   background-position: center;
   min-height: 10vh;
-  position: relative;
-  overflow: hidden;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: rgba(0, 0, 0, 0.767);
-  z-index: 1;
-}
-
-.leganic-color {
-  position: relative;
-  z-index: 2;
 }
 
 .offers-img{
