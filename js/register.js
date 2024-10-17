@@ -1,15 +1,25 @@
-let userDetails=document.getElementById('userDetails');
-userDetails.addEventListener('submit', function (event) {
-    event.preventDefault();
-    let userName = document.getElementById("userName").value;
-      let userEmail = document.getElementById("userEmail").value;
-      let userPassword = document.getElementById("userPassword").value;
-      let comfirmPassword = document.getElementById("comfirmPassword").value;
+let form = document.getElementById('userDetails');
+let userName = document.getElementById("userName");
+let userEmail = document.getElementById("userEmail");
+let userPassword = document.getElementById("userPassword");
 
-      localStorage.setItem('Name', userName)
-      localStorage.setItem('Email', userEmail)
-      localStorage.setItem('Password', userPassword)
-      localStorage.setItem('Confirm', comfirmPassword)
-      
-window.location.href="/pages/login.html"
-})
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  let name = userName.value;
+  let email = userEmail.value;
+  let Password = userPassword.value;
+
+  let user = {
+    userName: name,
+    userEmail: email,
+    userPassword: Password,
+  }
+
+  let stringifyObj = JSON.stringify(user)
+
+  localStorage.setItem('created-user', stringifyObj)
+
+
+  window.location.href = "/pages/login.html"
+});
