@@ -5,10 +5,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.btn-bg-color {
-  background-color: #7AA93C !important;
-}
-
 .carousel-item img {
   height: 70vh;
 }
@@ -20,6 +16,7 @@
 .bg-img {
   background-image: url(../images/produce.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .leganic-section {
