@@ -5,7 +5,7 @@ let userPassword = document.getElementById("userPassword");
 
 let getUserDetail = localStorage.getItem('created-user');
 
-let parseDetail = getUserDetail ? JSON.parse(getUserDetail) : null;
+let parseDetail = getUserDetail && JSON.parse(getUserDetail);
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -18,3 +18,4 @@ form.addEventListener('submit', function (e) {
     alert('Something went wrong');
   }
 });
+

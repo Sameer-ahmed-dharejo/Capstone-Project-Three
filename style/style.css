@@ -5,6 +5,8 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/* hero-section */
+
 .carousel-item img {
   height: 70vh;
 }
@@ -13,11 +15,30 @@
   font-family: "Pacifico", cursive;
 }
 
+/* produce-products */
+
 .bg-img {
   background-image: url(../images/produce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.scale img {
+  transition: transform 0.3s ease;
+}
+
+.scale:hover img {
+  transform: scale(1.1);
+}
+
+/* featured-products */
+
+.card:hover .card-img-top {
+  transform: scale(1.2);
+  transition: transform 0.4s ease;
+}
+
+/* food-presents-section */
 
 .leganic-section {
   background-image: url('../images/healthy\ organic\ food.jpg');
@@ -26,12 +47,94 @@
   min-height: 10vh;
 }
 
-.overlay {
+.bg-img-color {
   background-color: rgba(0, 0, 0, 0.767);
 }
+
+/* special-offers */
 
 .offers-img {
   background-image: url(../images/offers.jpg);
   background-repeat: no-repeat;
   height: 200px;
+}
+
+/* choose-secation */
+
+.float-animation {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* elementor-images-section */
+
+.overlay-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.overlay-container:hover .overlay-content {
+  opacity: 1;
+  background-color: rgba(255, 153, 0, 0.7);
+}
+
+/* Expert-farmers-section */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-opacity:hover .overlay {
+  opacity: 1;
+}
+
+.overlay iconify-icon {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.overlay iconify-icon:hover {
+  transform: scale(1.2);
+  background-color: #ffcc00 !important;
+}
+
+/* latest-news  */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.card-img {
+  height: 55%;
+}
+
+.zoom-out-img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .zoom-out-img {
+  transform: scale(1.1);
+}
+
+.jun-07 {
+  top: 38% !important;
+}
+
+.jun-7 {
+  left: 7% !important;
 }
