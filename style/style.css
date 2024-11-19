@@ -7,8 +7,34 @@
 
 /* hero-section */
 
-.carousel-item img {
-  height: 70vh;
+@media (max-width: 575.98px) {
+  .carusel-cards {
+    height: 50vh;
+  }
+
+  .carusel-cards img {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carusel-cards {
+    height: 60vh;
+  }
+
+  .carusel-cards img {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .carusel-cards {
+    height: 60vh;
+  }
+
+  .carusel-cards img {
+    height: 40vh;
+  }
 }
 
 .leganic {
